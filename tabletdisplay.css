@@ -239,7 +239,15 @@
   html {
     overflow-x: hidden !important;
   }
+
   /* NAVBAR */
+  nav {
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+
   #navbar ul {
     position: absolute;
     flex-direction: column;

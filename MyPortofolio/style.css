@@ -1,0 +1,397 @@
+@import url("/variable.css");
+@import url("/tabletdisplay.css");
+@import url("/mobiledisplay.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  overflow-x: hidden !important;
+}
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+#navbar {
+  display: flex;
+  background-color: var(--accent);
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0px 0px 25px #c5c5c5;
+}
+
+#navbar ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+}
+
+#navbar ul li a {
+  color: var(--primary-color);
+  font-weight: 500;
+  padding: 10px 5px;
+  transition: 0.2s;
+}
+
+#navbar ul li a:hover {
+  background-color: var(--primary-color);
+  color: var(--accent);
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+
+#navbar .icon-menu {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+}
+
+#navbar .icon-menu input {
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -6px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#navbar .icon-menu span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 3px;
+}
+/* AKHIR NAVBAR */
+
+/* MAIN */
+#main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90vh;
+}
+
+.profile-img {
+  width: 280px;
+  height: 350px;
+  overflow: hidden;
+}
+.profile-img img {
+  width: 100%;
+}
+
+.hero p i {
+  color: var(--primary-color);
+}
+
+.hero h1 {
+  font-size: 68px;
+}
+
+.hero h1 span {
+  color: var(--primary-color);
+}
+
+.hero .pass {
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.profile-img img {
+  width: 100%;
+}
+/* AKHIR MAIN */
+
+/* ABOUT */
+#about {
+  height: 100vh;
+  padding: 0px 100px;
+  align-content: center;
+}
+
+.cover {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: 400px;
+}
+
+.cover .deo-img {
+  width: 220px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.cover .deo-img img {
+  width: 100%;
+}
+
+.cover .text-about {
+  width: 50%;
+  color: var(--accent);
+}
+
+.cover .text-about h1 {
+  font-size: 36px;
+}
+
+.cover .text-about p {
+  font-weight: 200;
+}
+
+.cover .sosmed {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.cover .sosmed a {
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  transition: 0.2s;
+  text-align: center;
+}
+
+.cover .sosmed a:hover {
+  background-color: var(--accent);
+  color: var(--primary-color);
+}
+
+/* AKHIR ABOUT */
+
+/* SKILLS */
+#skills {
+  height: max-content;
+}
+
+.title-skills {
+  margin: 0px 100px;
+  padding: 50px 0px;
+}
+
+.title-skills h2 {
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+.title-skills h2 span {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.category-skill {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 100px;
+  color: var(--accent);
+}
+
+.card1,
+.card2,
+.card3 {
+  padding: 20px;
+  width: 250px;
+}
+
+.card1 {
+  background-image: url(/asset/skill-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card2 {
+  background-image: url(/asset/skill-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card3 {
+  background-image: url(/asset/skill-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card1 i,
+.card2 i,
+.card3 i {
+  font-size: 30px;
+}
+
+.card1 h4,
+.card2 h4,
+.card3 h4 {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
+  font-size: 14px;
+  margin-top: 12px;
+  font-weight: 300;
+}
+/* AKHIR SKILLS */
+
+/* PROJECT */
+/* MY-CONTENT */
+#project {
+  height: max-content;
+}
+
+.canvas {
+  background-color: var(--primary-color);
+}
+
+.project-tittle {
+  margin: 0px 100px;
+  padding: 50px 0px;
+}
+
+.project-tittle h2 {
+  font-size: 28px;
+  color: var(--primary-color);
+}
+
+.project-tittle span {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.my-content {
+  display: flex;
+  align-items: center;
+  padding: 50px 100px;
+  color: var(--accent);
+}
+
+.left-text {
+  text-align: right;
+  width: 50%;
+  font-weight: 250;
+}
+
+.right-text {
+  width: 50%;
+  font-weight: 250;
+}
+
+.content-video {
+  width: max-content;
+  text-align: center;
+}
+.content-video video {
+  width: 90%;
+  box-shadow: 0px 0px 20px black;
+}
+/* AKHIR MY-CONTENT */
+
+/* MY-PROJECT */
+.my-project {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  padding-bottom: 50px;
+}
+
+.my-project .project1 {
+  width: 35%;
+}
+.my-project .project2 {
+  width: 35%;
+}
+
+.my-project img {
+  width: 100%;
+  box-shadow: 0px 0px 20px black;
+}
+
+.my-project h3 {
+  font-size: 16px;
+}
+.my-project p {
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+/* AKHIR MY-PROJECT */
+/* AKHIR PROJECT */
+
+/* FOOTER */
+#footer {
+  height: max-content;
+  background: url("/asset/abstrak-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile-footer {
+  color: var(--accent);
+  margin-left: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inpo {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-sosmed h3 {
+  color: var(--accent);
+  font-size: 20px;
+}
+
+.icon-sosmed {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.icon-sosmed a {
+  color: var(--accent);
+  padding: 5px 10px;
+  border: 1px solid var(--accent);
+  transition: 0.2s;
+}
+
+.icon-sosmed a:hover {
+  color: var(--primary-color);
+  background-color: var(--accent);
+}
+
+.name-footer h3 {
+  font-size: 30px;
+  color: var(--accent);
+}
+
+.copyright p {
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+}
+/* AKHIR FOOTER */

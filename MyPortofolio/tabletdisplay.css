@@ -1,0 +1,327 @@
+@media only screen and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  /* Navabar */
+  nav {
+    position: sticky;
+    top: 0;
+  }
+
+  #navbar {
+    display: flex;
+    background-color: var(--accent);
+    height: 60px;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 25px #949494;
+  }
+
+  #navbar ul {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  #navbar ul li a {
+    color: #00315d;
+    font-weight: 500;
+    padding: 10px 5px;
+  }
+
+  #navbar ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 5px;
+    border-radius: 5px;
+  }
+
+  /* Main */
+  #main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 90vh;
+  }
+
+  .profile-img {
+    width: 240px;
+    height: 320px;
+    overflow: hidden;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+  }
+
+  .hero .pass {
+    font-size: 12px;
+    font-weight: bolder;
+  }
+
+  /* About */
+  #about {
+    height: 100vh;
+    padding: 0px 100px;
+    align-content: center;
+  }
+
+  .cover {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--primary-color);
+    height: 400px;
+  }
+
+  .cover .deo-img {
+    width: 200px;
+    height: 350px;
+    overflow: hidden;
+  }
+
+  .cover .text-about h1 {
+    font-size: 28px;
+  }
+
+  .cover .text-about p {
+    font-weight: 200;
+    font-size: 12px;
+  }
+
+  .cover .sosmed {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+
+  .cover .sosmed a {
+    color: gray;
+    border: 1px solid gray;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 12spx;
+    transition: 0.2s;
+    text-align: center;
+  }
+
+  /* SKILL */
+  #skills {
+    height: max-content;
+  }
+
+  .title-skills {
+    margin: 0px 100px;
+    padding: 50px 0px;
+  }
+
+  .title-skills h2 {
+    font-size: 28px;
+    color: var(--primary-color);
+  }
+
+  .title-skills h2 span {
+    border-bottom: 2px solid var(--primary-color);
+  }
+
+  .category-skill {
+    flex-direction: column;
+    justify-content: none;
+    margin: 0px 100px;
+    color: var(--accent);
+    align-items: center;
+  }
+
+  .card1,
+  .card2,
+  .card3 {
+    padding: 20px;
+    width: 250px;
+  }
+
+  .card1 {
+    background-image: url(/asset/skill-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .card2 {
+    background-image: url(/asset/skill-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+  }
+
+  .card3 {
+    background-image: url(/asset/skill-3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+  }
+
+  /* Project */
+  .left-text {
+    text-align: right;
+    width: 70%;
+    font-weight: 200;
+    font-size: 12px;
+  }
+
+  .right-text {
+    width: 70%;
+    font-weight: 200;
+    font-size: 12px;
+  }
+
+  .content-video video {
+    width: 90%;
+    box-shadow: 0px 0px 20px black;
+  }
+
+  .my-project h3 {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .my-project p {
+    font-size: 12px;
+    font-weight: 200;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    overflow-x: hidden;
+  }
+  /* About */
+  #about {
+    height: 100vh;
+    padding: 0px 100px;
+    align-content: center;
+  }
+
+  .cover .text-about {
+    width: 80% !important;
+    color: var(--accent);
+  }
+
+  .cover .deo-img {
+    display: none;
+    width: 200px;
+    height: 350px;
+    overflow: hidden;
+  }
+
+  .cover .text-about p {
+    font-weight: 200;
+    font-size: 12px;
+  }
+
+  .cover .sosmed {
+    flex-direction: column;
+    padding-top: 0px;
+  }
+
+  .cover .sosmed a {
+    color: gray;
+    border: 1px solid gray;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 12spx;
+    transition: 0.2s;
+    text-align: center;
+  }
+  /* AKHIR ABOUT */
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    overflow-x: hidden !important;
+  }
+  /* NAVBAR */
+  #navbar ul {
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly !important;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    background-color: var(--second-color);
+    text-align: center;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: all 1s;
+  }
+
+  #navbar ul.slide {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  #navbar ul li a {
+    color: var(--accent) !important;
+    font-weight: 500;
+    padding: 10px 5px;
+  }
+
+  #navbar ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--accent);
+    padding: 10px 5px;
+    border-radius: 5px;
+  }
+
+  #navbar .icon-menu {
+    display: flex !important;
+  }
+
+  /* AKHIR NAVBAR */
+
+  /* Main */
+  #main {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+  }
+
+  .profile-img {
+    width: 280px;
+    height: 350px;
+    overflow: hidden;
+    display: none;
+  }
+  .profile-img img {
+    width: 100%;
+  }
+  /* Akhir Main */
+
+  /* MY-CONTENT */
+  .my-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+    color: var(--accent);
+  }
+
+  .content-video video {
+    width: 40% !important;
+    box-shadow: 0px 0px 20px black;
+  }
+
+  .left-text {
+    order: 1;
+    text-align: left !important;
+    width: 80% !important;
+    font-weight: 250;
+    margin-top: 10px !important;
+  }
+
+  .right-text {
+    width: 80% !important;
+    font-weight: 250;
+    margin-top: 10px !important;
+  }
+  /* AKHIR MY-CONTENT */
+}
